@@ -1,0 +1,38 @@
+.subscribe {
+    background-color: $color-gray-1;
+    height: 370px;
+    margin-top: 90px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .subscribe-box {
+            border: $color-border;
+            background-color: $color-white;
+            height: 210px;
+            width: 1170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+
+            #subscribe-form {
+                position: relative;
+
+                .subscribe-email {
+                    position: relative;
+                    border: 1px solid $color-border;
+                    border-radius: 25px;
+                    height: 60px;
+                    width: 860px;
+                    padding-left: 40px;
+                    outline: none;
+                    font-family: $font-poppins;
+                    font-size: 1.1rem;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.offer {
+    background-color: $color-theme-2;
+    padding: 70px 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 30px;
+        justify-content: center;
+
+        @include lg {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 30px;
+            justify-content: center;
+        }
+
+        
+
+        .product-card {
+            border: 1px solid $color-border;
+            background-color: $color-white;
+            display: none;
+            
+            @include lg {
+                display: block;
+                border: 1px solid $color-border;
+                background-color: $color-white;
+            }
+
+            .product-image {
+                margin-bottom: 20px;
+            }
+
+            .product-content {
+                margin: 0px 18px;
+
+                .product-info {
+                    font-family: $font-poppins;
+                    font-size: 18px;
+                    font-weight: $font-weight-medium;
+                    color: $color-dark-1;
+                }
+
+                .product-price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 25px;
+
+                    .price {
+                        font-family: $font-poppins;
+
+                        .old-price {
+                            font-style: normal;
+                            text-decoration: line-through;
+                            margin-right: 20px;
+                        }
+                        .new-price {
+                            font-style: normal;
+                        }
+                    }
+                }
+            }
+        }
+
+        .offer-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-white;
+            border: 1px solid $color-border;
+            height: 430px;
+            width: 370px;
+
+
+            .title {
+                font-family: $font-poppins;
+                font-size: 18px;
+                font-weight: $font-weight-bold;
+                color: $color-theme-1;
+            }
+
+            .discount {
+                font-family: $font-roboto;
+                font-size: 48px;
+                font-weight: $font-weight-bold;
+                color: $color-dark-25;
+                margin-top: 5px;
+            }
+
+            .subtitle {
+                font-family: $font-poppins;
+                font-size: 24px;
+                font-weight: $font-weight-bold;
+                color: $color-dark-25;
+                margin-top: 5px;
+            }
+
+            .description {
+                font-family: $font-roboto;
+                font-size: 16px;
+                font-weight: $font-weight-regular;
+                color: $color-dark-3;
+                text-align: center;
+                margin-top: 20px;
+                padding: 0px 50px;
+            }
+
+            .offer-link {
+                font-family: $font-poppins;
+                font-size: 16px;
+                font-weight: $font-weight-regular;
+                color: $color-dark-25;
+                margin-top: 15px;
+            }
+        }
+    }
+}

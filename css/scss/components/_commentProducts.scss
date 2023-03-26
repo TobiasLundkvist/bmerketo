@@ -1,0 +1,38 @@
+.product {
+    .product-comments {
+        .product-card {
+            .product-image {
+                margin-bottom: 20px;
+            }
+            
+            .product-content {
+                width: 370px;
+                // .product-info {
+
+                // }
+                .comment {
+                    font-family: $font-roboto;
+                    margin: 20px 0;
+                }
+
+                .comment-info {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: $color-gray-3;
+
+
+                    // .posted {
+
+                    // }
+                    .comments {
+                        color: $color-gray-3;
+                        margin-left: 20px;
+
+                    }
+                }
+
+            }
+        }
+    }
+}

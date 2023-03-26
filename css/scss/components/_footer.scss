@@ -1,0 +1,12 @@
+.footer {
+    background-color: $color-dark-2;
+    .container {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        .footer-text {
+            color: $color-gray-2;
+        }
+    }
+}
